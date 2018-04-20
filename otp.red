@@ -98,10 +98,11 @@ mainTabs: [ "OTP" [
 	return
 	
 	; Action buttons
-	btn1: button 100x40 bold "COMPUTE" on-click [btn3/Text: "START" Area1/rate: none CycleDoc] 
-	btn2: button 100x40 bold "COPY" on-click [CopyDoc] cursor hand
-	btn3: button 100x40 bold "STOP" on-click  [either Area1/rate [btn3/Text: "START" Area1/rate: none ] [btn3/Text: "STOP" Area1/rate: 10] ]
-	btn4: button 100x40 bold "ABOUT" on-click [view infoScreen] 
+	btn1: button 75x40 bold "COMPUTE" on-click [btn3/Text: "START" Area1/rate: none CycleDoc] 
+	btn2: button 75x40 bold "COPY" on-click [CopyDoc] cursor hand
+	btn3: button 75x40 bold "PASTE" on-click [PasteDoc] cursor hand
+	btn4: button 75x40 bold "STOP" on-click  [either Area1/rate [btn4/Text: "START" Area1/rate: none ] [btn4/Text: "STOP" Area1/rate: 10] ]
+	btn5: button 75x40 bold "ABOUT" on-click [view infoScreen] 
 	return
   
 	; Otp area1
@@ -180,9 +181,13 @@ CopyDoc: does [
 	TmpOtp: Area1/text
 	write-clipboard TmpOtp
 	prin TmpOtp
-	; write %otpout.txt TmpOtp
 	]
 
+; Paste from clipboard on this otp
+PasteDoc: does [
+	Area1/text: read-clipboard
+	]
+	
 ;
 ; RUN CODE, ALL DONE BY VIEW & RATE 	
 ;
