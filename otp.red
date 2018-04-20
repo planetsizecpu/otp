@@ -26,6 +26,7 @@ Red [
 		0.2.5 "06-10-2017"  "Added coder/decoder"
 		0.2.6 "19-10-2017"  "Fixed coder call break related overflow"
 		0.2.7 "02-02-2018"  "Reactions code block moved & upgraded"
+		0.2.8 "20-04-2018"	"Add paste button & code"
 	]
 ]
 
@@ -41,7 +42,7 @@ SymMul: 10   ; # Symbol multiplyer
 SymRng: 90   ; Range of ASCII symbols that ends with "z"
 SymOst: 32   ; Offset to ASCII keyboard symbols that start with space
 DefFnt: "Consolas"
-DefVer: "------------ Version 0.2.7 -----------"
+DefVer: "------------ Version 0.2.8 -----------"
 
 ;
 ; SCREEN BLOCKS DEFINITIONS
