@@ -11,6 +11,9 @@ in a private owned computer system, also must not trust the output given by this
 User is to be warned to care of system lock if control parameters are raised to their limits, or to a limit out of the bounds of the
 computing power on the host computer system.
 
-Manual use of output given by this software is a powerful secrecy messaging system, the author does not accept any responsibility in any way for their use.
+Manual use of output given by this software is a powerful secrecy messaging system, the author does not accept any responsibility in any way for their use. 
 
+As password generator it relays on the user selected parameters for it's strength, so user may take care of security desired level.
+
+As new word generator it outputs pronounceable words without any signigication, some tests as been done by searching on the web having found pronounceable words with zero hits on google, for example. Doing this is an amazing task as there is a plenty of new words to be discovered, have fun.
 
