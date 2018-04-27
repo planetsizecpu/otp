@@ -15,5 +15,5 @@ Manual use of output given by this software is a powerful secrecy messaging syst
 
 As password generator it relays on the user selected parameters for it's strength, so user may take care of security desired level.
 
-As new word generator it outputs pronounceable words without signification, some tests as been done by searching on the web, where found pronounceable words with zero hits on google, for example. Doing this is an amazing task as there is a plenty of new words to be discovered, have fun.
+As new word generator some times outputs pronounceable words without signification, some tests as been done by searching on the web, where found pronounceable words with zero hits on google, for example. Doing this is an amazing task as there is a plenty of new words to be discovered, have fun.
 
