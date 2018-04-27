@@ -27,6 +27,7 @@ Red [
 		0.2.6 "19-10-2017"  "Fixed coder call break related overflow"
 		0.2.7 "02-02-2018"  "Reactions code block moved & upgraded"
 		0.2.8 "20-04-2018"	"Add paste button & code"
+		0.2.9 "27-04-2018"	"Fixed start button misshandling"
 	]
 ]
 
@@ -42,7 +43,7 @@ SymMul: 10   ; # Symbol multiplyer
 SymRng: 90   ; Range of ASCII symbols that ends with "z"
 SymOst: 32   ; Offset to ASCII keyboard symbols that start with space
 DefFnt: "Consolas"
-DefVer: "------------ Version 0.2.8 -----------"
+DefVer: "------------ Version 0.2.9 -----------"
 
 ;
 ; SCREEN BLOCKS DEFINITIONS
@@ -153,7 +154,7 @@ mainTabs: [ "OTP" [
 mainScreen: layout [
 	title "OTP" 
 	size 450x750
-	at 0x0 pan: tab-panel 449x749 mainTabs on-change [if event/picked > 1 [btn3/Text: "START" Area1/rate: none]]
+	at 0x0 pan: tab-panel 449x749 mainTabs on-change [if event/picked > 1 [btn4/Text: "START" Area1/rate: none]]
 
 	; Reactions
 	react [BlqPtr: to integer! (blk/data * 10) + 1
