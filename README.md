@@ -11,7 +11,7 @@ in a private owned computer system, also must not trust the output given by this
 User is must be warned to care of system lock if control parameters are raised to their limits, or to a limit out of the bounds of the
 computing power on the host computer system.
 
-Manual use of output given by this software is a powerful secrecy messaging system, the author does not accept any responsibility in any way for their use or manipulation, use them at your risk.
+Use of output given by this software is a powerful secrecy messaging system, the author does not accept any responsibility in any way for their use or manipulation, use them at your risk.
 
 As password generator it relays on the user selected parameters for it's strength, so user must take care of desired security level.
 
