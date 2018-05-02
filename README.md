@@ -13,7 +13,7 @@ computing power on the host computer system.
 
 Manual use of output given by this software is a powerful secrecy messaging system, the author does not accept any responsibility in any way for their use. 
 
-As password generator it relays on the user selected parameters for it's strength, so user may take care of desired security level.
+As password generator it relays on the user selected parameters for it's strength, so user must take care of desired security level.
 
 As new word generator sometimes outputs pronounceable words without signification, some tests as been done by searching on the web, where found pronounceable words with zero hits on searchers, for example. Doing this is an amazing task as there is a plenty of new words to be discovered, take your time and have fun.
 
