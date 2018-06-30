@@ -19,3 +19,4 @@ As password generator it relays on the user selected parameters for it's strengt
 
 As new word generator sometimes outputs pronounceable words without signification, some tests as been done by searching on the web, where found pronounceable words with zero hits on searchers, for example. Doing this is an amazing task as there is a plenty of new words to be discovered, take your time and have fun.
 
+Red language is an open source project made by Full Stack Technologies @ www.red-lang.org
