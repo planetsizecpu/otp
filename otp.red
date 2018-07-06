@@ -28,6 +28,7 @@ Red [
 		0.2.7 "02-02-2018"  "Reactions code block moved & upgraded"
 		0.2.8 "20-04-2018"	"Add paste button & code"
 		0.2.9 "27-04-2018"	"Fixed start button misshandling"
+		0.3.0 "06-07-2018"	"Add copy buttons on tabs"
 	]
 ]
 
@@ -43,7 +44,7 @@ SymMul: 10   ; # Symbol multiplyer
 SymRng: 90   ; Range of ASCII symbols that ends with "z"
 SymOst: 32   ; Offset to ASCII keyboard symbols that start with space
 DefFnt: "Consolas"
-DefVer: "------------ Version 0.2.9 -----------"
+DefVer: "------------ Version 0.3.0 -----------"
 
 ;
 ; SCREEN BLOCKS DEFINITIONS
@@ -115,8 +116,8 @@ mainTabs: [ "OTP" [
 		] para [align: 'center wrap?: yes] on-time [CycleDoc]	
 	]
 
-	; --- Coder tab ---
-	"Coder" [
+	; --- Key tab ---
+	"Key" [
 	origin 5x10
 	SourceTxt: field 350x40  green font [
         name: DefFnt
@@ -130,23 +131,27 @@ mainTabs: [ "OTP" [
         size: 12
         color: white
 		] para [wrap?: no ]
+	return
+	button 70x40 "Copy" [CopyKey]
 	]
 		
-	; --- Decoder tab ---
-	"DeCoder" [
+	; --- Coder-Decoder tab ---
+	"Coder" [
 	origin 5x10
 	DeCodeTxt: field 350x40  red font [
         name: DefFnt
         size: 20
         color: black
 		]	
-	button 70x40 "DE-CODE" [DeCodeTxt/text: otpDeCode Area3/text Area2/text]		
+	button 70x40 "DECODE" [DeCodeTxt/text: otpDeCode Area3/text Area2/text]		
 	return
 	Area3: area 435x600 blue font [
         name: DefFnt
         size: 12
         color: white
 		] para [wrap?: yes]
+		return
+	button 70x40 "Copy" [CopyCoder]
 	]
 ]
 
@@ -170,7 +175,7 @@ mainScreen: layout [
 ;
 ; SCRIPT FUNCTIONS DEFINITION
 ;
-; Cycle this otp
+; Cycle current otp
 CycleDoc: does [
 	clear Area1/text
 	TmpOtp: otpGet BlqPtr LinPtr ColPtr SymPtr SymRng SymOst
@@ -178,18 +183,49 @@ CycleDoc: does [
 	Area2/text: TmpOtp
 ]
 
-; Copy to clipboard this otp
+; Copy to clipboard current otp
 CopyDoc: does [
 	TmpOtp: Area1/text
 	write-clipboard TmpOtp
 	prin TmpOtp
 	]
-
-; Paste from clipboard on this otp
+	
+; Paste on current otp from clipboard (otp or formatted text)
+; CAUTION, CLIPBOARD DOES NOT HANDLE CR/NL PROPERLY
 PasteDoc: does [
 	Area1/text: read-clipboard
 	]
+
+; Copy to clipboard current key otp (encoded string)
+CopyKey: does [
+	TmpKey: Area2/text
+	write-clipboard TmpKey
+	prin TmpKey
+	]	
+
 	
+; Paste on Key tab from clipboard (otp or formatted text)
+; CLIPBOARD DOES NOT HANDLE CR/NL PROPERLY SO WE NO LOGER USE IT HERE
+PasteKey: does [
+	clear Area2/text
+	Area2/text: read-clipboard
+	]
+	
+; Copy to clipboard current coder (encoded string)
+CopyCoder: does [
+	TmpCoder: Area3/text
+	write-clipboard TmpCoder
+	prin TmpCoder
+	]	
+
+; Paste on coder from clipboard (encoded string) 
+; CLIPBOARD DOES NOT HANDLE CR/NL PROPERLY SO WE NO LOGER USE IT HERE
+PasteCoder: does [
+	clear Area3/text
+	Area3/text: read-clipboard
+	]
+	
+
 ;
 ; RUN CODE, ALL DONE BY VIEW & RATE 	
 ;
