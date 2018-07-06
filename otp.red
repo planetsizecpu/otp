@@ -26,9 +26,9 @@ Red [
 		0.2.5 "06-10-2017"  "Added coder/decoder"
 		0.2.6 "19-10-2017"  "Fixed coder call break related overflow"
 		0.2.7 "02-02-2018"  "Reactions code block moved & upgraded"
-		0.2.8 "20-04-2018"	"Add paste button & code"
-		0.2.9 "27-04-2018"	"Fixed start button misshandling"
-		0.3.0 "06-07-2018"	"Add copy buttons on tabs"
+		0.2.8 "20-04-2018"  "Add paste button & code"
+		0.2.9 "27-04-2018"  "Fixed start button misshandling"
+		0.3.0 "06-07-2018"  "Add copy buttons on tabs"
 	]
 ]
 
