@@ -13,7 +13,7 @@ in a private owned computer system, also must not trust the output given by this
 User must be warned to care of system lock if control parameters are raised to their limits, or to a limit out of the bounds of the
 computing power on the host computer system.
 
-Use of output given by this software is a powerful secrecy messaging system, the author does not accept any responsibility in any way for their use or manipulation, use them at your risk. In the designing I was inspired by the novel and movie "The Fourth Protocol" from Frederick Forsyth & John Mckenzie, the book explains very well how the otp sheet works, and the movie contains an scene where an otp sheet is used. I would like to thank them and Michael Caine, Pierce Brosnan and all the crew for his great work.
+Use of output given by this software is a powerful secrecy messaging system, the author does not accept any responsibility in any way for their use or manipulation, use them at your risk. In the designing I was inspired by the novel and movie "The Fourth Protocol" © from Frederick Forsyth & John Mckenzie, the book explains very well how the otp sheet works, and the movie contains an scene where an otp sheet is used. I would like to thank them and Michael Caine, Pierce Brosnan and all the crew for his great work.
 
 As password generator it relays on the user selected parameters for it's strength, so user must take care of desired security level.
 
