@@ -29,6 +29,7 @@ Red [
 		0.2.8 "20-04-2018"  "Add paste button & code"
 		0.2.9 "27-04-2018"  "Fixed start button misshandling"
 		0.3.0 "06-07-2018"  "Add copy buttons on tabs"
+		0.3.1 "03-01-2019"  "Add font selection & remove old choices"
 	]
 ]
 
@@ -36,6 +37,7 @@ Red [
 either system/state/interpreted? [do %otplib.red][#include %otplib.red]
 	
 ; Default values
+; recycle
 BlqPtr: 5
 LinPtr: 5
 ColPtr: 5
@@ -44,7 +46,8 @@ SymMul: 10   ; # Symbol multiplyer
 SymRng: 90   ; Range of ASCII symbols that ends with "z"
 SymOst: 32   ; Offset to ASCII keyboard symbols that start with space
 DefFnt: "Consolas"
-DefVer: "------------ Version 0.3.0 -----------"
+NewFnt: object!
+DefVer: "------------ Version 0.3.1 -----------"
 
 ;
 ; SCREEN BLOCKS DEFINITIONS
@@ -89,10 +92,9 @@ mainTabs: [ "OTP" [
 	
 	; Font controls
 	group-box 435x90 [
-		space 5x10
+		space 25x10
 		fnt1: radio bold "Console" data on on-down [Area1/Font/Name: "Consolas"] 
-		fnt2: radio bold "Terminal" on-down [Area1/Font/Name: "Terminal"] 
-		fnt3: radio bold "Fixed" on-down [Area1/Font/Name: "Fixedsys"]
+		fnt2: button bold "Font" on-click [NewFnt: request-font	either none? NewFnt [][Area1/Font: NewFnt]]
 		sty1: check bold "Bold" [either face/data [Area1/font/style: 'bold ] [Area1/Font/Style: none] ]
 		sty2: check bold "Reverse" [either face/data [Area1/Color: white Area1/Font/Color: blue] [Area1/Color: blue Area1/Font/Color: white] ]
 		return
