@@ -94,7 +94,7 @@ mainTabs: [ "OTP" [
 	group-box 435x90 [
 		space 25x10
 		fnt1: radio bold "Console" data on on-down [Area1/Font/Name: "Consolas"] 
-		fnt2: button bold "Font" on-click [NewFnt: request-font	either none? NewFnt [][Area1/Font: NewFnt Area1/Font/Color: white Area1/color: blue sty2/data: false]]
+		fnt2: button bold "Font" on-click [NewFnt: request-font	either none? NewFnt [][Area1/Font: NewFnt Area1/Font/Color: white Area1/color: blue fnt1/data: false sty2/data: false]]
 		sty1: check bold "Bold" [either face/data [Area1/font/style: 'bold ] [Area1/Font/Style: none] ]
 		sty2: check bold "Reverse" [either face/data [Area1/Color: white Area1/Font/Color: blue] [Area1/Color: blue Area1/Font/Color: white] ]
 		return
