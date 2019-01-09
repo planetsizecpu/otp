@@ -103,7 +103,7 @@ mainTabs: [ "OTP" [
 	return
 	
 	; Action buttons
-	btn1: button 75x40 bold "COMPUTE" on-click [btn3/Text: "START" Area1/rate: none CycleDoc] 
+	btn1: button 75x40 bold "COMPUTE" on-click [btn4/Text: "START" Area1/rate: none CycleDoc] 
 	btn2: button 75x40 bold "COPY" on-click [CopyDoc] cursor hand
 	btn3: button 75x40 bold "PASTE" on-click [PasteDoc] cursor hand
 	btn4: button 75x40 bold "STOP" on-click  [either Area1/rate [btn4/Text: "START" Area1/rate: none ] [btn4/Text: "STOP" Area1/rate: 10] ]
