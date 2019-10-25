@@ -29,7 +29,7 @@ Red [
 		0.2.8 "20-04-2018"  "Add paste button & code"
 		0.2.9 "27-04-2018"  "Fixed start button misshandling"
 		0.3.0 "06-07-2018"  "Add copy buttons on tabs"
-		0.3.1 "03-01-2019"  "Add font selection & remove old choices"
+		0.3.1 "03-01-2019"  "Add font selection & remove old code"
 	]
 ]
 
