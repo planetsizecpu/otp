@@ -1,7 +1,7 @@
 # otp
 One Time Pad/ssword pratice app
 
-It generates pseudo-random blocks of characters in a shape controlled by on-screen controls.
+It generates pseudo-random blocks of characters in a shape controlled by on-screen controls, if correctly used can meet the "perfect secret" feature.
 
 Disclaimer:
 
