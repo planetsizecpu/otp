@@ -2,6 +2,7 @@
 One Time Pad/ssword pratice app
 
 It generates pseudo-random blocks of characters in a shape controlled by on-screen controls.
+
 Disclaimer:
 
 This code is intended to use for training purposes only, must be used in a isolated computer system not conected to a network. If ... it is possible today?
