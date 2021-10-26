@@ -21,4 +21,6 @@ As new word generator sometimes outputs pronounceable words without significatio
 
 Red language is an open source project made by Full Stack Technologies @ www.red-lang.org
 
+REQUIREMENTS: NONE on Windows
+
 ![Test Image 0](/otptest02.gif)
