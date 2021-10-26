@@ -21,6 +21,6 @@ As new word generator sometimes outputs pronounceable words without significatio
 
 Red language is an open source project made by Full Stack Technologies @ www.red-lang.org
 
-REQUIREMENTS: NONE on Windows, The Red toolchain on other OSs, For Linux GTK Must be installed and running.
+REQUIREMENTS: NONE on Windows, The Red toolchain on other OSs, for Linux GTK Must be installed and running. We plan an Android release when cross compiler ready.
 
 ![Test Image 0](/otptest02.gif)
