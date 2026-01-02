@@ -5,7 +5,7 @@ It generates pseudo-random blocks of characters in a shape controlled by on-scre
 
 *** DISCLAIMER ***
 
-This code is intended to use for training purposes only, must be used in a isolated computer system not conected to a network. If ... it is possible today?
+This code is intended to use for training purposes only.
 
 The author does not accept any responsibility in any way for their use, and the user is responsible of use it for testing purposes only
 in a private owned computer system, also must not fully trust the output given by this software if the correct security measures have not been taken, as both the code and the Red language itself still under development.
